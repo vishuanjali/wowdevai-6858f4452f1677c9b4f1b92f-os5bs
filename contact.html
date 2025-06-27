@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-id="page-title">Contact Us - FoodieHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar Container -->
+  <div data-id="navbar-container" data-source="components/navbar.html"><!-- navbar will be injected --></div>
+
+  <!-- Hero Section -->
+  <section data-id="hero-section" class="bg-gradient-to-br from-red-500 to-orange-600 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 data-id="hero-title" class="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h1>
+      <p data-id="hero-description" class="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
+        Have questions, feedback, or need support? We'd love to hear from you!
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section data-id="contact-section" class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <!-- Contact Form -->
+        <div data-id="contact-form-container" class="bg-white rounded-2xl shadow-lg p-8">
+          <h2 data-id="contact-form-title" class="text-2xl font-bold mb-6 text-gray-800">Send us a Message</h2>
+          
+          <form data-id="contact-form" id="contact-form" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label data-id="first-name-label" for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                <input data-id="first-name-input" type="text" id="firstName" name="firstName" required
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-colors">
+              </div>
+              <div>
+                <label data-id="last-name-label" for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                <input data-id="last-name-input" type="text" id="lastName" name="lastName" required
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-colors">
+              </div>
+            </div>
+            
+            <div>
+              <label data-id="email-label" for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+              <input data-id="email-input" type="email" id="email" name="email" required
+                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-colors">
+            </div>
+            
+            <div>
+              <label data-id="phone-label" for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+              <input data-id="phone-input" type="tel" id="phone" name="phone"
+                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-colors">
+            </div>
+            
+            <div>
+              <label data-id="subject-label" for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+              <select data-id="subject-select" id="subject" name="subject" required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-colors">
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Customer Support</option>
+                <option value="partnership">Restaurant Partnership</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div>
+              <label data-id="message-label" for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+              <textarea data-id="message-textarea" id="message" name="message" rows="5" required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-colors resize-vertical"
+                        placeholder="Tell us how we can help you..."></textarea>
+            </div>
+            
+            <button data-id="submit-button" type="submit" 
+                    class="w-full bg-red-500 hover:bg-red-600 text-white py-3 px-6 rounded-lg font-semibold transition-colors flex items-center justify-center">
+              <span>Send Message</span>
+              <i data-lucide="send" class="w-4 h-4 ml-2"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div data-id="contact-info-container" class="space-y-8">
+          <!-- Contact Details -->
+          <div data-id="contact-details" class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 data-id="contact-details-title" class="text-2xl font-bold mb-6 text-gray-800">Contact Information</h2>
+            
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <i data-lucide="map-pin" class="w-6 h-6 text-red-500"></i>
+                </div>
+                <div>
+                  <h3 data-id="address-title" class="font-semibold text-gray-800 mb-1">Address</h3>
+                  <p data-id="address-text" class="text-gray-600">123 Food Street<br>Delivery City, DC 12345<br>United States</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <i data-lucide="phone" class="w-6 h-6 text-green-500"></i>
+                </div>
+                <div>
+                  <h3 data-id="phone-title" class="font-semibold text-gray-800 mb-1">Phone</h3>
+                  <p data-id="phone-text" class="text-gray-600">+1 (555) 123-4567</p>
+                  <p data-id="phone-hours" class="text-sm text-gray-500">Mon-Fri 9AM-6PM EST</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <i data-lucide="mail" class="w-6 h-6 text-blue-500"></i>
+                </div>
+                <div>
+                  <h3 data-id="email-title" class="font-semibold text-gray-800 mb-1">Email</h3>
+                  <p data-id="email-text" class="text-gray-600">support@foodiehub.com</p>
+                  <p data-id="email-response" class="text-sm text-gray-500">We'll respond within 24 hours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Section -->
+          <div data-id="faq-section" class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 data-id="faq-title" class="text-2xl font-bold mb-6 text-gray-800">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+              <div data-id="faq-item-1" class="faq-item border-b border-gray-200 pb-4">
+                <button data-id="faq-question-1" class="faq-question w-full text-left font-semibold text-gray-800 flex items-center justify-between">
+                  How do I track my order?
+                  <i data-lucide="chevron-down" class="w-4 h-4 transition-transform"></i>
+                </button>
+                <div data-id="faq-answer-1" class="faq-answer hidden mt-2 text-gray-600">
+                  You can track your order in real-time through our app or website. You'll receive SMS updates and can see your delivery partner's location on the map.
+                </div>
+              </div>
+              
+              <div data-id="faq-item-2" class="faq-item border-b border-gray-200 pb-4">
+                <button data-id="faq-question-2" class="faq-question w-full text-left font-semibold text-gray-800 flex items-center justify-between">
+                  What are your delivery hours?
+                  <i data-lucide="chevron-down" class="w-4 h-4 transition-transform"></i>
+                </button>
+                <div data-id="faq-answer-2" class="faq-answer hidden mt-2 text-gray-600">
+                  We deliver from 7:00 AM to 11:00 PM, 7 days a week. Some restaurants may have different operating hours.
+                </div>
+              </div>
+              
+              <div data-id="faq-item-3" class="faq-item border-b border-gray-200 pb-4">
+                <button data-id="faq-question-3" class="faq-question w-full text-left font-semibold text-gray-800 flex items-center justify-between">
+                  How can I cancel my order?
+                  <i data-lucide="chevron-down" class="w-4 h-4 transition-transform"></i>
+                </button>
+                <div data-id="faq-answer-3" class="faq-answer hidden mt-2 text-gray-600">
+                  You can cancel your order within 2 minutes of placing it through the app or by calling our support team immediately.
+                </div>
+              </div>
+              
+              <div data-id="faq-item-4" class="faq-item">
+                <button data-id="faq-question-4" class="faq-question w-full text-left font-semibold text-gray-800 flex items-center justify-between">
+                  Do you offer refunds?
+                  <i data-lucide="chevron-down" class="w-4 h-4 transition-transform"></i>
+                </button>
+                <div data-id="faq-answer-4" class="faq-answer hidden mt-2 text-gray-600">
+                  Yes, we offer full refunds for cancelled orders and partial refunds for issues with food quality or delivery problems.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Container -->
+  <div data-id="footer-container" data-source="components/footer.html"><!-- footer will be injected --></div>
+
+  <script type="module" data-runtime="true">
+    import { loadNavbar } from './scripts/components/navbar.js';
+    import { loadFooter } from './scripts/components/footer.js';
+    
+    // Load components
+    loadNavbar('#navbar-container');
+    loadFooter('#footer-container');
+    
+    // Initialize Lucide icons
+    lucide.createIcons();
+    
+    // Contact form handling
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      
+      // Simulate form submission
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      
+      submitBtn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin mr-2"></i>Sending...';
+      submitBtn.disabled = true;
+      
+      setTimeout(() => {
+        submitBtn.innerHTML = '<i data-lucide="check" class="w-4 h-4 mr-2"></i>Message Sent!';
+        submitBtn.classList.remove('bg-red-500', 'hover:bg-red-600');
+        submitBtn.classList.add('bg-green-500');
+        
+        // Reset form
+        this.reset();
+        
+        setTimeout(() => {
+          submitBtn.innerHTML = originalText;
+          submitBtn.classList.remove('bg-green-500');
+          submitBtn.classList.add('bg-red-500', 'hover:bg-red-600');
+          submitBtn.disabled = false;
+          lucide.createIcons();
+        }, 3000);
+        
+        lucide.createIcons();
+      }, 2000);
+    });
+    
+    // FAQ functionality
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('[data-lucide="chevron-down"]');
+        
+        if (answer.classList.contains('hidden')) {
+          answer.classList.remove('hidden');
+          icon.style.transform = 'rotate(180deg)';
+        } else {
+          answer.classList.add('hidden');
+          icon.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

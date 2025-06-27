@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-id="page-title">Pizza Palace - FoodieHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar Container -->
+  <div data-id="navbar-container" data-source="components/navbar.html"><!-- navbar will be injected --></div>
+
+  <!-- Restaurant Header -->
+  <section class="relative" data-id="restaurant-header">
+    <div class="h-64 md:h-80 bg-cover bg-center" 
+         style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=400&fit=crop');" 
+         data-id="header-background">
+      <div class="absolute inset-0 bg-black bg-opacity-40" data-id="header-overlay"></div>
+    </div>
+    
+    <div class="container mx-auto px-4" data-id="header-content-container">
+      <div class="relative -mt-20 bg-white rounded-2xl shadow-xl p-6 md:p-8" data-id="header-content">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between" data-id="header-info-container">
+          <div class="flex-1" data-id="restaurant-info">
+            <div class="flex items-center mb-2" data-id="restaurant-title-rating">
+              <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mr-4" data-id="restaurant-title">Pizza Palace</h1>
+              <div class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold" data-id="restaurant-rating">
+                4.2 ★
+              </div>
+            </div>
+            <p class="text-gray-600 mb-4" data-id="restaurant-type">Italian, Fast Food, Pizza</p>
+            <div class="flex flex-wrap gap-4 text-sm text-gray-600" data-id="restaurant-details">
+              <div class="flex items-center" data-id="delivery-time">
+                <i data-lucide="clock" class="w-4 h-4 mr-1"></i>
+                25-30 mins
+              </div>
+              <div class="flex items-center" data-id="restaurant-distance">
+                <i data-lucide="map-pin" class="w-4 h-4 mr-1"></i>
+                2.5 km away
+              </div>
+              <div class="flex items-center" data-id="price-for-two">
+                <i data-lucide="dollar-sign" class="w-4 h-4 mr-1"></i>
+                ₹200 for two
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-4 md:mt-0 flex items-center space-x-4" data-id="header-actions">
+            <button class="flex items-center px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors" data-id="save-button">
+              <i data-lucide="heart" class="w-4 h-4 mr-2"></i>
+              Save
+            </button>
+            <button class="flex items-center px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors" data-id="share-button">
+              <i data-lucide="share-2" class="w-4 h-4 mr-2"></i>
+              Share
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="py-8" data-id="menu-section">
+    <div class="container mx-auto px-4" data-id="menu-container">
+      <div class="flex flex-col lg:flex-row gap-8" data-id="menu-content">
+        <!-- Menu Items -->
+        <div class="flex-1" data-id="menu-items">
+          <div class="bg-white rounded-2xl shadow-lg p-6" data-id="menu-card">
+            <h2 class="text-2xl font-bold mb-6" data-id="menu-title">Menu</h2>
+            
+            <!-- Menu Categories -->
+            <div class="flex flex-wrap gap-2 mb-8 border-b pb-4" data-id="menu-categories">
+              <button class="menu-category-btn bg-red-500 text-white px-4 py-2 rounded-full text-sm font-medium" data-id="all-items-category">
+                All Items
+              </button>
+              <button class="menu-category-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm font-medium transition-colors" data-id="pizza-category">
+                Pizza
+              </button>
+              <button class="menu-category-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm font-medium transition-colors" data-id="pasta-category">
+                Pasta
+              </button>
+              <button class="menu-category-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm font-medium transition-colors" data-id="sides-category">
+                Sides
+              </button>
+              <button class="menu-category-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm font-medium transition-colors" data-id="beverages-category">
+                Beverages
+              </button>
+            </div>
+
+            <!-- Menu Items List -->
+            <div class="space-y-6" data-id="menu-items-list">
+              <!-- Pizza Section -->
+              <div class="menu-section" data-id="pizza-section">
+                <h3 class="text-xl font-bold mb-4 text-gray-800" data-id="pizza-title">Pizza</h3>
+                
+                <div class="menu-item flex items-center justify-between p-4 border border-gray-200 rounded-xl hover:shadow-md transition-shadow" data-id="margherita-pizza-item">
+                  <div class="flex items-center flex-1" data-id="margherita-pizza-info">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=100&h=100&fit=crop" 
+                         alt="Margherita Pizza" class="w-20 h-20 rounded-lg object-cover mr-4" data-id="margherita-pizza-image">
+                    <div class="flex-1" data-id="margherita-pizza-details">
+                      <h4 class="font-semibold text-lg mb-1" data-id="margherita-pizza-name">Margherita Pizza</h4>
+                      <p class="text-gray-600 text-sm mb-2" data-id="margherita-pizza-description">Fresh tomatoes, mozzarella cheese, basil</p>
+                      <div class="flex items-center" data-id="margherita-pizza-price-veg">
+                        <span class="text-lg font-bold text-gray-800" data-id="margherita-pizza-price">₹299</span>
+                        <div class="ml-2 bg-green-100 text-green-800 px-2 py-1 rounded text-xs" data-id="margherita-pizza-veg">
+                          <i data-lucide="leaf" class="w-3 h-3 inline mr-1"></i>Veg
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="add-to-cart-btn bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors ml-4" data-id="margherita-pizza-add-to-cart">
+                    Add
+                  </button>
+                </div>
+
+                <div class="menu-item flex items-center justify-between p-4 border border-gray-200 rounded-xl hover:shadow-md transition-shadow" data-id="pepperoni-pizza-item">
+                  <div class="flex items-center flex-1" data-id="pepperoni-pizza-info">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=100&h=100&fit=crop" 
+                         alt="Pepperoni Pizza" class="w-20 h-20 rounded-lg object-cover mr-4" data-id="pepperoni-pizza-image">
+                    <div class="flex-1" data-id="pepperoni-pizza-details">
+                      <h4 class="font-semibold text-lg mb-1" data-id="pepperoni-pizza-name">Pepperoni Pizza</h4>
+                      <p class="text-gray-600 text-sm mb-2" data-id="pepperoni-pizza-description">Pepperoni, mozzarella cheese, tomato sauce</p>
+                      <div class="flex items-center" data-id="pepperoni-pizza-price-non-veg">
+                        <span class="text-lg font-bold text-gray-800" data-id="pepperoni-pizza-price">₹399</span>
+                        <div class="ml-2 bg-red-100 text-red-800 px-2 py-1 rounded text-xs" data-id="pepperoni-pizza-non-veg">
+                          <i data-lucide="drumstick" class="w-3 h-3 inline mr-1"></i>Non-Veg
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="add-to-cart-btn bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors ml-4" data-id="pepperoni-pizza-add-to-cart">
+                    Add
+                  </button>
+                </div>
+
+                <div class="menu-item flex items-center justify-between p-4 border border-gray-200 rounded-xl hover:shadow-md transition-shadow" data-id="veggie-supreme-pizza-item">
+                  <div class="flex items-center flex-1" data-id="veggie-supreme-pizza-info">
+                    <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=100&h=100&fit=crop" 
+                         alt="Veggie Supreme" class="w-20 h-20 rounded-lg object-cover mr-4" data-id="veggie-supreme-pizza-image">
+                    <div class="flex-1" data-id="veggie-supreme-pizza-details">
+                      <h4 class="font-semibold text-lg mb-1" data-id="veggie-supreme-pizza-name">Veggie Supreme</h4>
+                      <p class="text-gray-600 text-sm mb-2" data-id="veggie-supreme-pizza-description">Bell peppers, onions, mushrooms, olives</p>
+                      <div class="flex items-center" data-id="veggie-supreme-pizza-price-veg">
+                        <span class="text-lg font-bold text-gray-800" data-id="veggie-supreme-pizza-price">₹349</span>
+                        <div class="ml-2 bg-green-100 text-green-800 px-2 py-1 rounded text-xs" data-id="veggie-supreme-pizza-veg">
+                          <i data-lucide="leaf" class="w-3 h-3 inline mr-1"></i>Veg
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="add-to-cart-btn bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors ml-4" data-id="veggie-supreme-pizza-add-to-cart">
+                    Add
+                  </button>
+                </div>
+              </div>
+
+              <!-- Pasta Section -->
+              <div class="menu-section" data-id="pasta-section">
+                <h3 class="text-xl font-bold mb-4 text-gray-800" data-id="pasta-title">Pasta</h3>
+                
+                <div class="menu-item flex items-center justify-between p-4 border border-gray-200 rounded-xl hover:shadow-md transition-shadow" data-id="spaghetti-carbonara-item">
+                  <div class="flex items-center flex-1" data-id="spaghetti-carbonara-info">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=100&h=100&fit=crop" 
+                         alt="Spaghetti Carbonara" class="w-20 h-20 rounded-lg object-cover mr-4" data-id="spaghetti-carbonara-image">
+                    <div class="flex-1" data-id="spaghetti-carbonara-details">
+                      <h4 class="font-semibold text-lg mb-1" data-id="spaghetti-carbonara-name">Spaghetti Carbonara</h4>
+                      <p class="text-gray-600 text-sm mb-2" data-id="spaghetti-carbonara-description">Creamy pasta with bacon and parmesan</p>
+                      <div class="flex items-center" data-id="spaghetti-carbonara-price-non-veg">
+                        <span class="text-lg font-bold text-gray-800" data-id="spaghetti-carbonara-price">₹279</span>
+                        <div class="ml-2 bg-red-100 text-red-800 px-2 py-1 rounded text-xs" data-id="spaghetti-carbonara-non-veg">
+                          <i data-lucide="drumstick" class="w-3 h-3 inline mr-1"></i>Non-Veg
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="add-to-cart-btn bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors ml-4" data-id="spaghetti-carbonara-add-to-cart">
+                    Add
+                  </button>
+                </div>
+
+                <div class="menu-item flex items-center justify-between p-4 border border-gray-200 rounded-xl hover:shadow-md transition-shadow" data-id="penne-arrabbiata-item">
+                  <div class="flex items-center flex-1" data-id="penne-arrabbiata-info">
+                    <img src="https://images.unsplash.com/photo-1572441713132-51c75654db73?w=100&h=100&fit=crop" 
+                         alt="Penne Arrabbiata" class="w-20 h-20 rounded-lg object-cover mr-4" data-id="penne-arrabbiata-image">
+                    <div class="flex-1" data-id="penne-arrabbiata-details">
+                      <h4 class="font-semibold text-lg mb-1" data-id="penne-arrabbiata-name">Penne Arrabbiata</h4>
+                      <p class="text-gray-600 text-sm mb-2" data-id="penne-arrabbiata-description">Spicy tomato sauce with garlic and herbs</p>
+                      <div class="flex items-center" data-id="penne-arrabbiata-price-veg">
+                        <span class="text-lg font-bold text-gray-800" data-id="penne-arrabbiata-price">₹249</span>
+                        <div class="ml-2 bg-green-100 text-green-800 px-2 py-1 rounded text-xs" data-id="penne-arrabbiata-veg">
+                          <i data-lucide="leaf" class="w-3 h-3 inline mr-1"></i>Veg
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="add-to-cart-btn bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors ml-4" data-id="penne-arrabbiata-add-to-cart">
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart Sidebar -->
+        <div class="lg:w-80" data-id="cart-sidebar">
+          <div class="bg-white rounded-2xl shadow-lg p-6 sticky top-24" data-id="cart-card">
+            <h3 class="text-xl font-bold mb-4" data-id="cart-title">Your Order</h3>
+            
+            <div id="cart-items" class="space-y-4 mb-6" data-id="cart-items-container">
+              <div class="text-center text-gray-500 py-8" data-id="empty-cart-message">
+                <i data-lucide="shopping-cart" class="w-12 h-12 mx-auto mb-2 opacity-50"></i>
+                <p>Your cart is empty</p>
+                <p class="text-sm">Add items to get started</p>
+              </div>
+            </div>
+
+            <div id="cart-summary" class="hidden" data-id="cart-summary-container">
+              <div class="border-t pt-4" data-id="cart-summary-details">
+                <div class="flex justify-between mb-2" data-id="subtotal-container">
+                  <span data-id="subtotal-label">Subtotal</span>
+                  <span id="subtotal" data-id="subtotal-value">₹0</span>
+                </div>
+                <div class="flex justify-between mb-2" data-id="delivery-fee-container">
+                  <span data-id="delivery-fee-label">Delivery Fee</span>
+                  <span data-id="delivery-fee-value">₹40</span>
+                </div>
+                <div class="flex justify-between mb-4 font-bold text-lg" data-id="total-container">
+                  <span data-id="total-label">Total</span>
+                  <span id="total" data-id="total-value">₹40</span>
+                </div>
+                <button class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition-colors" data-id="proceed-to-checkout">
+                  Proceed to Checkout
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Container -->
+  <div data-id="footer-container" data-source="components/footer.html"><!-- footer will be injected --></div>
+
+  <script type="module" data-runtime="true">
+    import { loadNavbar } from './scripts/components/navbar.js';
+    import { loadFooter } from './scripts/components/footer.js';
+    
+    // Load components
+    loadNavbar('#navbar-container');
+    loadFooter('#footer-container');
+    
+    // Initialize Lucide icons
+    lucide.createIcons();
+    
+    // Cart functionality
+    let cart = [];
+    
+    function updateCart() {
+      const cartItemsContainer = document.getElementById('cart-items');
+      const cartSummary = document.getElementById('cart-summary');
+      const subtotalElement = document.getElementById('subtotal');
+      const totalElement = document.getElementById('total');
+      
+      if (cart.length === 0) {
+        cartItemsContainer.innerHTML = `
+          <div class="text-center text-gray-500 py-8">
+            <i data-lucide="shopping-cart" class="w-12 h-12 mx-auto mb-2 opacity-50"></i>
+            <p>Your cart is empty</p>
+            <p class="text-sm">Add items to get started</p>
+          </div>
+        `;
+        cartSummary.classList.add('hidden');
+      } else {
+        cartItemsContainer.innerHTML = cart.map(item => `
+          <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+            <div class="flex-1">
+              <h4 class="font-medium">${item.name}</h4>
+              <p class="text-sm text-gray-600">₹${item.price}</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <button class="decrease-qty w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center" data-id="${item.id}">
+                <i data-lucide="minus" class="w-4 h-4"></i>
+              </button>
+              <span class="w-8 text-center">${item.quantity}</span>
+              <button class="increase-qty w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center" data-id="${item.id}">
+                <i data-lucide="plus" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        `).join('');
+        
+        const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        const total = subtotal + 40;
+        
+        subtotalElement.textContent = `₹${subtotal}`;
+        totalElement.textContent = `₹${total}`;
+        cartSummary.classList.remove('hidden');
+      }
+      
+      lucide.createIcons();
+      
+      // Add event listeners for quantity buttons
+      document.querySelectorAll('.decrease-qty').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const itemId = e.currentTarget.dataset.id;
+          decreaseQuantity(itemId);
+        });
+      });
+      
+      document.querySelectorAll('.increase-qty').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const itemId = e.currentTarget.dataset.id;
+          increaseQuantity(itemId);
+        });
+      });
+    }
+    
+    function addToCart(item) {
+      const existingItem = cart.find(cartItem => cartItem.id === item.id);
+      
+      if (existingItem) {
+        existingItem.quantity += 1;
+      } else {
+        cart.push({ ...item, quantity: 1 });
+      }
+      
+      updateCart();
+    }
+    
+    function increaseQuantity(itemId) {
+      const item = cart.find(cartItem => cartItem.id === itemId);
+      if (item) {
+        item.quantity += 1;
+        updateCart();
+      }
+    }
+    
+    function decreaseQuantity(itemId) {
+      const itemIndex = cart.findIndex(cartItem => cartItem.id === itemId);
+      if (itemIndex !== -1) {
+        if (cart[itemIndex].quantity > 1) {
+          cart[itemIndex].quantity -= 1;
+        } else {
+          cart.splice(itemIndex, 1);
+        }
+        updateCart();
+      }
+    }
+    
+    // Menu category functionality
+    document.querySelectorAll('.menu-category-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        document.querySelectorAll('.menu-category-btn').forEach(b => {
+          b.classList.remove('bg-red-500', 'text-white');
+          b.classList.add('bg-gray-200', 'text-gray-700');
+        });
+        
+        // Add active class to clicked button
+        btn.classList.remove('bg-gray-200', 'text-gray-700');
+        btn.classList.add('bg-red-500', 'text-white');
+      });
+    });
+    
+    // Add to cart button functionality
+    document.querySelectorAll('.add-to-cart-btn').forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        const menuItem = btn.closest('.menu-item');
+        const name = menuItem.querySelector('h4').textContent;
+        const priceText = menuItem.querySelector('.text-lg.font-bold').textContent;
+        const price = parseInt(priceText.replace('₹', ''));
+        
+        const item = {
+          id: `item-${index}`,
+          name: name,
+          price: price
+        };
+        
+        addToCart(item);
+        
+        // Visual feedback
+        btn.textContent = 'Added!';
+        btn.classList.add('bg-green-500');
+        btn.classList.remove('bg-red-500');
+        
+        setTimeout(() => {
+          btn.textContent = 'Add';
+          btn.classList.remove('bg-green-500');
+          btn.classList.add('bg-red-500');
+        }, 1000);
+      });
+    });
+    
+    // Initialize cart
+    updateCart();
+  </script>
+</body>
+</html>

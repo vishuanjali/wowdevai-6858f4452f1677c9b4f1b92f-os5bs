@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-id="root-document">
+<head data-id="head-section">
+  <meta charset="UTF-8" data-id="charset-meta">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-id="viewport-meta">
+  <title data-id="title-tag">About Us - FoodieHub</title>
+  <script src="https://cdn.tailwindcss.com" data-id="tailwind-script"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css" data-id="typekit-stylesheet">
+  <script src="https://unpkg.com/lucide@latest" data-id="lucide-script"></script>
+  <style data-id="global-styles">
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50" data-id="body-element">
+  <!-- Navbar Container -->
+  <div id="navbar-container" data-id="navbar-placeholder" data-source="components/navbar.html">
+    <!-- navbar will be injected -->
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-red-500 to-orange-600 text-white py-16" data-id="hero-section">
+    <div class="container mx-auto px-4 text-center" data-id="hero-container">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6" data-id="hero-title">About FoodieHub</h1>
+      <p class="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto" data-id="hero-description">
+        We're passionate about connecting food lovers with their favorite restaurants and delivering happiness, one meal at a time.
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="py-16 bg-white" data-id="our-story-section">
+    <div class="container mx-auto px-4" data-id="our-story-container">
+      <div class="max-w-4xl mx-auto" data-id="our-story-inner-container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" data-id="our-story-grid">
+          <div data-id="our-story-text-column">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800" data-id="our-story-title">Our Story</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed" data-id="our-story-paragraph-1">
+              Founded in 2020, FoodieHub started with a simple mission: to make delicious food accessible to everyone, everywhere. What began as a small startup has grown into a trusted platform connecting millions of food lovers with their favorite restaurants.
+            </p>
+            <p class="text-gray-600 mb-6 leading-relaxed" data-id="our-story-paragraph-2">
+              We believe that great food brings people together, and our technology makes it easier than ever to discover, order, and enjoy meals from the comfort of your home or office.
+            </p>
+            <div class="flex items-center space-x-8" data-id="our-story-stats-container">
+              <div class="text-center" data-id="stat-1">
+                <div class="text-3xl font-bold text-red-500" data-id="stat-1-value">1M+</div>
+                <div class="text-gray-600" data-id="stat-1-label">Happy Customers</div>
+              </div>
+              <div class="text-center" data-id="stat-2">
+                <div class="text-3xl font-bold text-red-500" data-id="stat-2-value">5K+</div>
+                <div class="text-gray-600" data-id="stat-2-label">Partner Restaurants</div>
+              </div>
+              <div class="text-center" data-id="stat-3">
+                <div class="text-3xl font-bold text-red-500" data-id="stat-3-value">50+</div>
+                <div class="text-gray-600" data-id="stat-3-label">Cities</div>
+              </div>
+            </div>
+          </div>
+          <div data-id="our-story-image-column">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop" 
+                 alt="Our team" class="rounded-2xl shadow-lg" data-id="our-story-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section class="py-16 bg-gray-100" data-id="our-values-section">
+    <div class="container mx-auto px-4" data-id="our-values-container">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800" data-id="our-values-title">Our Values</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto" data-id="our-values-grid">
+        <div class="bg-white rounded-2xl p-8 text-center shadow-lg" data-id="value-1-card">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6" data-id="value-1-icon-container">
+            <i data-lucide="heart" class="w-8 h-8 text-red-500" data-id="value-1-icon"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4" data-id="value-1-title">Customer First</h3>
+          <p class="text-gray-600" data-id="value-1-description">
+            Every decision we make is centered around delivering the best possible experience for our customers.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-8 text-center shadow-lg" data-id="value-2-card">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6" data-id="value-2-icon-container">
+            <i data-lucide="leaf" class="w-8 h-8 text-green-500" data-id="value-2-icon"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4" data-id="value-2-title">Sustainability</h3>
+          <p class="text-gray-600" data-id="value-2-description">
+            We're committed to reducing our environmental impact through eco-friendly packaging and practices.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-8 text-center shadow-lg" data-id="value-3-card">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6" data-id="value-3-icon-container">
+            <i data-lucide="users" class="w-8 h-8 text-blue-500" data-id="value-3-icon"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4" data-id="value-3-title">Community</h3>
+          <p class="text-gray-600" data-id="value-3-description">
+            We support local restaurants and communities, helping them thrive in the digital age.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-16 bg-white" data-id="team-section">
+    <div class="container mx-auto px-4" data-id="team-container">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800" data-id="team-title">Meet Our Team</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto" data-id="team-grid">
+        <div class="text-center" data-id="team-member-1">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" 
+               alt="Team member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" data-id="team-member-1-image">
+          <h3 class="text-lg font-bold mb-1" data-id="team-member-1-name">John Smith</h3>
+          <p class="text-gray-600 mb-2" data-id="team-member-1-position">CEO & Founder</p>
+          <div class="flex justify-center space-x-2" data-id="team-member-1-links">
+            <a href="#" class="text-gray-400 hover:text-blue-500" data-id="team-member-1-linkedin">
+              <i data-lucide="linkedin" class="w-4 h-4" data-id="team-member-1-linkedin-icon"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-blue-400" data-id="team-member-1-twitter">
+              <i data-lucide="twitter" class="w-4 h-4" data-id="team-member-1-twitter-icon"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="text-center" data-id="team-member-2">
+          <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face" 
+               alt="Team member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" data-id="team-member-2-image">
+          <h3 class="text-lg font-bold mb-1" data-id="team-member-2-name">Sarah Johnson</h3>
+          <p class="text-gray-600 mb-2" data-id="team-member-2-position">CTO</p>
+          <div class="flex justify-center space-x-2" data-id="team-member-2-links">
+            <a href="#" class="text-gray-400 hover:text-blue-500" data-id="team-member-2-linkedin">
+              <i data-lucide="linkedin" class="w-4 h-4" data-id="team-member-2-linkedin-icon"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-blue-400" data-id="team-member-2-twitter">
+              <i data-lucide="twitter" class="w-4 h-4" data-id="team-member-2-twitter-icon"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="text-center" data-id="team-member-3">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" 
+               alt="Team member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" data-id="team-member-3-image">
+          <h3 class="text-lg font-bold mb-1" data-id="team-member-3-name">Mike Chen</h3>
+          <p class="text-gray-600 mb-2" data-id="team-member-3-position">Head of Operations</p>
+          <div class="flex justify-center space-x-2" data-id="team-member-3-links">
+            <a href="#" class="text-gray-400 hover:text-blue-500" data-id="team-member-3-linkedin">
+              <i data-lucide="linkedin" class="w-4 h-4" data-id="team-member-3-linkedin-icon"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-blue-400" data-id="team-member-3-twitter">
+              <i data-lucide="twitter" class="w-4 h-4" data-id="team-member-3-twitter-icon"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="text-center" data-id="team-member-4">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face" 
+               alt="Team member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" data-id="team-member-4-image">
+          <h3 class="text-lg font-bold mb-1" data-id="team-member-4-name">Emily Davis</h3>
+          <p class="text-gray-600 mb-2" data-id="team-member-4-position">Head of Marketing</p>
+          <div class="flex justify-center space-x-2" data-id="team-member-4-links">
+            <a href="#" class="text-gray-400 hover:text-blue-500" data-id="team-member-4-linkedin">
+              <i data-lucide="linkedin" class="w-4 h-4" data-id="team-member-4-linkedin-icon"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-blue-400" data-id="team-member-4-twitter">
+              <i data-lucide="twitter" class="w-4 h-4" data-id="team-member-4-twitter-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Container -->
+  <div id="footer-container" data-id="footer-placeholder" data-source="components/footer.html">
+    <!-- footer will be injected -->
+  </div>
+
+  <script type="module" data-id="script-tag">
+    import { loadNavbar } from './scripts/components/navbar.js';
+    import { loadFooter } from './scripts/components/footer.js';
+    
+    // Load components
+    loadNavbar('#navbar-container');
+    loadFooter('#footer-container');
+    
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>

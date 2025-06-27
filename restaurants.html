@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-id="page-title">Restaurants - FoodieHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar Container -->
+  <div data-id="navbar-container" data-source="components/navbar.html"><!-- navbar will be injected --></div>
+
+  <!-- Header Section -->
+  <section class="bg-white py-8 border-b" data-id="header-section">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-id="hero-title">
+        Restaurants Near You
+      </h1>
+      
+      <!-- Filters -->
+      <div class="flex flex-wrap gap-4 items-center" data-id="filters-container">
+        <div class="flex items-center space-x-2" data-id="filter-label">
+          <i data-lucide="filter" class="w-5 h-5 text-gray-600"></i>
+          <span class="text-gray-700 font-medium" data-id="filter-text">Filters:</span>
+        </div>
+        
+        <button class="filter-btn bg-red-500 text-white px-4 py-2 rounded-full text-sm font-medium" data-id="all-filter-btn">
+          All
+        </button>
+        <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm font-medium transition-colors" data-id="fast-food-filter-btn">
+          Fast Food
+        </button>
+        <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm font-medium transition-colors" data-id="italian-filter-btn">
+          Italian
+        </button>
+        <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm font-medium transition-colors" data-id="indian-filter-btn">
+          Indian
+        </button>
+        <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm font-medium transition-colors" data-id="chinese-filter-btn">
+          Chinese
+        </button>
+        
+        <div class="ml-auto flex items-center space-x-4" data-id="sort-select-container">
+          <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm" data-id="sort-select">
+            <option data-id="popularity-sort-option">Sort by: Popularity</option>
+            <option data-id="rating-sort-option">Sort by: Rating</option>
+            <option data-id="delivery-time-sort-option">Sort by: Delivery Time</option>
+            <option data-id="cost-sort-option">Sort by: Cost</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurants Grid -->
+  <section class="py-8" data-id="restaurants-grid">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" data-id="restaurant-cards-grid">
+        <!-- Restaurant Cards -->
+        <div class="restaurant-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer overflow-hidden" data-id="pizza-palace-card">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=250&fit=crop" 
+                 alt="Restaurant" class="w-full h-48 object-cover" data-id="pizza-palace-image">
+            <div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold" data-id="pizza-palace-rating">
+              4.2 ★
+            </div>
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2" data-id="pizza-palace-heart-icon">
+              <i data-lucide="heart" class="w-4 h-4 text-gray-600"></i>
+            </div>
+            <div class="absolute bottom-3 left-3 bg-orange-500 text-white px-2 py-1 rounded text-xs font-semibold" data-id="pizza-palace-offer">
+              50% OFF
+            </div>
+          </div>
+          <div class="p-4" data-id="pizza-palace-details">
+            <h3 class="font-bold text-lg mb-1" data-id="pizza-palace-name">Pizza Palace</h3>
+            <p class="text-gray-600 text-sm mb-2" data-id="pizza-palace-cuisine">Italian, Fast Food</p>
+            <div class="flex justify-between items-center" data-id="pizza-palace-pricing">
+              <span class="text-gray-800 font-semibold" data-id="pizza-palace-price">₹200 for two</span>
+              <span class="text-sm text-gray-500" data-id="pizza-palace-delivery-time">25-30 mins</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer overflow-hidden" data-id="burger-junction-card">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=250&fit=crop" 
+                 alt="Restaurant" class="w-full h-48 object-cover" data-id="burger-junction-image">
+            <div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold" data-id="burger-junction-rating">
+              4.5 ★
+            </div>
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2" data-id="burger-junction-heart-icon">
+              <i data-lucide="heart" class="w-4 h-4 text-gray-600"></i>
+            </div>
+          </div>
+          <div class="p-4" data-id="burger-junction-details">
+            <h3 class="font-bold text-lg mb-1" data-id="burger-junction-name">Burger Junction</h3>
+            <p class="text-gray-600 text-sm mb-2" data-id="burger-junction-cuisine">American, Burgers</p>
+            <div class="flex justify-between items-center" data-id="burger-junction-pricing">
+              <span class="text-gray-800 font-semibold" data-id="burger-junction-price">₹300 for two</span>
+              <span class="text-sm text-gray-500" data-id="burger-junction-delivery-time">20-25 mins</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer overflow-hidden" data-id="spice-garden-card">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=250&fit=crop" 
+                 alt="Restaurant" class="w-full h-48 object-cover" data-id="spice-garden-image">
+            <div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold" data-id="spice-garden-rating">
+              4.0 ★
+            </div>
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2" data-id="spice-garden-heart-icon">
+              <i data-lucide="heart" class="w-4 h-4 text-gray-600"></i>
+            </div>
+          </div>
+          <div class="p-4" data-id="spice-garden-details">
+            <h3 class="font-bold text-lg mb-1" data-id="spice-garden-name">Spice Garden</h3>
+            <p class="text-gray-600 text-sm mb-2" data-id="spice-garden-cuisine">Indian, Vegetarian</p>
+            <div class="flex justify-between items-center" data-id="spice-garden-pricing">
+              <span class="text-gray-800 font-semibold" data-id="spice-garden-price">₹250 for two</span>
+              <span class="text-sm text-gray-500" data-id="spice-garden-delivery-time">30-35 mins</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer overflow-hidden" data-id="sushi-express-card">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=250&fit=crop" 
+                 alt="Restaurant" class="w-full h-48 object-cover" data-id="sushi-express-image">
+            <div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold" data-id="sushi-express-rating">
+              4.3 ★
+            </div>
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2" data-id="sushi-express-heart-icon">
+              <i data-lucide="heart" class="w-4 h-4 text-gray-600"></i>
+            </div>
+          </div>
+          <div class="p-4" data-id="sushi-express-details">
+            <h3 class="font-bold text-lg mb-1" data-id="sushi-express-name">Sushi Express</h3>
+            <p class="text-gray-600 text-sm mb-2" data-id="sushi-express-cuisine">Japanese, Sushi</p>
+            <div class="flex justify-between items-center" data-id="sushi-express-pricing">
+              <span class="text-gray-800 font-semibold" data-id="sushi-express-price">₹400 for two</span>
+              <span class="text-sm text-gray-500" data-id="sushi-express-delivery-time">35-40 mins</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer overflow-hidden" data-id="taco-fiesta-card">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=250&fit=crop" 
+                 alt="Restaurant" class="w-full h-48 object-cover" data-id="taco-fiesta-image">
+            <div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold" data-id="taco-fiesta-rating">
+              4.1 ★
+            </div>
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2" data-id="taco-fiesta-heart-icon">
+              <i data-lucide="heart" class="w-4 h-4 text-gray-600"></i>
+            </div>
+          </div>
+          <div class="p-4" data-id="taco-fiesta-details">
+            <h3 class="font-bold text-lg mb-1" data-id="taco-fiesta-name">Taco Fiesta</h3>
+            <p class="text-gray-600 text-sm mb-2" data-id="taco-fiesta-cuisine">Mexican, Tacos</p>
+            <div class="flex justify-between items-center" data-id="taco-fiesta-pricing">
+              <span class="text-gray-800 font-semibold" data-id="taco-fiesta-price">₹280 for two</span>
+              <span class="text-sm text-gray-500" data-id="taco-fiesta-delivery-time">25-30 mins</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer overflow-hidden" data-id="noodle-house-card">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=250&fit=crop" 
+                 alt="Restaurant" class="w-full h-48 object-cover" data-id="noodle-house-image">
+            <div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold" data-id="noodle-house-rating">
+              4.4 ★
+            </div>
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2" data-id="noodle-house-heart-icon">
+              <i data-lucide="heart" class="w-4 h-4 text-gray-600"></i>
+            </div>
+            <div class="absolute bottom-3 left-3 bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold" data-id="noodle-house-offer">
+              FREE DELIVERY
+            </div>
+          </div>
+          <div class="p-4" data-id="noodle-house-details">
+            <h3 class="font-bold text-lg mb-1" data-id="noodle-house-name">Noodle House</h3>
+            <p class="text-gray-600 text-sm mb-2" data-id="noodle-house-cuisine">Chinese, Asian</p>
+            <div class="flex justify-between items-center" data-id="noodle-house-pricing">
+              <span class="text-gray-800 font-semibold" data-id="noodle-house-price">₹220 for two</span>
+              <span class="text-sm text-gray-500" data-id="noodle-house-delivery-time">20-25 mins</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer overflow-hidden" data-id="healthy-bites-card">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=250&fit=crop" 
+                 alt="Restaurant" class="w-full h-48 object-cover" data-id="healthy-bites-image">
+            <div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold" data-id="healthy-bites-rating">
+              3.9 ★
+            </div>
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2" data-id="healthy-bites-heart-icon">
+              <i data-lucide="heart" class="w-4 h-4 text-gray-600"></i>
+            </div>
+          </div>
+          <div class="p-4" data-id="healthy-bites-details">
+            <h3 class="font-bold text-lg mb-1" data-id="healthy-bites-name">Healthy Bites</h3>
+            <p class="text-gray-600 text-sm mb-2" data-id="healthy-bites-cuisine">Healthy, Salads</p>
+            <div class="flex justify-between items-center" data-id="healthy-bites-pricing">
+              <span class="text-gray-800 font-semibold" data-id="healthy-bites-price">₹180 for two</span>
+              <span class="text-sm text-gray-500" data-id="healthy-bites-delivery-time">15-20 mins</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer overflow-hidden" data-id="dessert-paradise-card">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=250&fit=crop" 
+                 alt="Restaurant" class="w-full h-48 object-cover" data-id="dessert-paradise-image">
+            <div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold" data-id="dessert-paradise-rating">
+              4.6 ★
+            </div>
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2" data-id="dessert-paradise-heart-icon">
+              <i data-lucide="heart" class="w-4 h-4 text-gray-600"></i>
+            </div>
+          </div>
+          <div class="p-4" data-id="dessert-paradise-details">
+            <h3 class="font-bold text-lg mb-1" data-id="dessert-paradise-name">Dessert Paradise</h3>
+            <p class="text-gray-600 text-sm mb-2" data-id="dessert-paradise-cuisine">Desserts, Ice Cream</p>
+            <div class="flex justify-between items-center" data-id="dessert-paradise-pricing">
+              <span class="text-gray-800 font-semibold" data-id="dessert-paradise-price">₹150 for two</span>
+              <span class="text-sm text-gray-500" data-id="dessert-paradise-delivery-time">10-15 mins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-12" data-id="load-more-container">
+        <button class="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-full font-semibold transition-colors" data-id="load-more-btn">
+          Load More Restaurants
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Container -->
+  <div data-id="footer-container" data-source="components/footer.html"><!-- footer will be injected --></div>
+
+  <script type="module" data-runtime="true">
+    import { loadNavbar } from './scripts/components/navbar.js';
+    import { loadFooter } from './scripts/components/footer.js';
+    
+    // Load components
+    loadNavbar('#navbar-container');
+    loadFooter('#footer-container');
+    
+    // Initialize Lucide icons
+    lucide.createIcons();
+    
+    // Filter functionality
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.classList.remove('bg-red-500', 'text-white');
+          b.classList.add('bg-gray-200', 'text-gray-700');
+        });
+        
+        // Add active class to clicked button
+        btn.classList.remove('bg-gray-200', 'text-gray-700');
+        btn.classList.add('bg-red-500', 'text-white');
+      });
+    });
+    
+    // Restaurant card click handlers
+    document.querySelectorAll('.restaurant-card').forEach(card => {
+      card.addEventListener('click', () => {
+        window.location.href = 'restaurant.html';
+      });
+    });
+  </script>
+</body>
+</html>
